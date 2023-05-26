@@ -1,0 +1,1 @@
+firebase deploy in cmd to update site
