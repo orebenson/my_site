@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Ore Benson Portfolio"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ore Benson</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="main-nav">
+            <ul>
+                <li><a href="#home" id="homeLink" class="active">home</a></li>
+                <li><a href="#projects" id="projectsLink" class="inactive">projects</a></li>
+            </ul>
+        </div>
+        <div id="main-list-wrapper">
+            <div class="main" id="home">
+                <h1>Ore Benson</h1>
+                <div class="page-container" id="home-container">
+                    <div class="page-nav" id="home-nav">
+                        <ul>
+                            <li><p><a href="#about" id="aboutLink" class="active">about</a></p></li>
+                            <li><p><a href="#skills" id="skillsLink" class="inactive">skills</a></p></li>
+                            <li><p><a href="#contact" id="contactLink" class="inactive">contact</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="list-wrapper" id="home-list-wrapper">
+                        <div class="list-wrapper-element" id="about">
+                            <h2>About</h2>
+                            <p>Work in progress...</p>
+                        </div>
+                        <div class="list-wrapper-element" id="skills">
+                            <h2>Skills</h2>
+                            <ul>
+                                <li><p> Python, Django, Scipy</p></li>
+                                <li><p> Java, JavaFX</p></li>
+                                <li><p> Javascript, NodeJS, ExpressJS, ReactJS</p></li>
+                                <li><p> HTML/CSS, PHP</p></li>
+                                <li><p> MySQL, SQLite, MongoDB</p></li>
+                            </ul>
+                        </div>
+                        <div class="list-wrapper-element" id="contact">
+                            <h2>Contact</h2>
+                            <ul>
+                                <li><p><a href="mailto:contact@orebenson.com">contact@orebenson.com</a></p></li>
+                                <li><p><a href="https://www.github.com/orebenson" target="_blank">github.com/orebenson</a></p></li>
+                                <li><p><a href="https://www.linkedin.com/in/orebenson" target="_blank">linkedin.com/in/orebenson</a></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main" id="projects">
+                <h1>Projects</h1>
+                <div class="page-container" id="projects-container">
+                    <div class="page-nav" id="projects-nav">
+                        <ul>
+                            <li><p><a href="#project1" id="project1Link" class="active">Project 1</a></p></li>
+                            <li><p><a href="#project2" id="project2Link" class="inactive">Project 2</a></p></li>
+                            <li><p><a href="#project3" id="project3Link" class="inactive">Project 3</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="list-wrapper" id="project-list-wrapper">
+                        <div class="list-wrapper-element" id="project1">
+                            <h2>Keystroke Analyser</h2>
+                        </div>
+                        <div class="list-wrapper-element" id="project2">
+                            <h2>[ Project 2 ]</h2>
+                        </div>
+                        <div class="list-wrapper-element" id="project3">
+                            <h2>[ Project 3 ]</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
 </html>
