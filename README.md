@@ -1,8 +1,8 @@
 # My Portfolio Website
 ### Ore Benson
 
-This is my portfolio website. Hosted on firebase at orebenson.com
+This is the code for my portfolio website. Hosted on firebase at orebenson.com
 
-## Setup
-
-firebase deploy in cmd to update live site
+## Technologies
+* HTML/CSS
+* JavaScript
