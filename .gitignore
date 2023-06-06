@@ -1,4 +1,4 @@
-.firebaserc
+*.firebaserc
 
 # dependencies
 /node_modules
