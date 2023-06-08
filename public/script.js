@@ -7,7 +7,7 @@ const contactLink = document.getElementById("contactLink")
 
 const project1Link = document.getElementById("project1Link")
 const project2Link = document.getElementById("project2Link")
-const project3Link = document.getElementById("project3Link")
+// const project3Link = document.getElementById("project3Link")
 
 function setActive (active_div, div2, div3=null) {
     active_div.className = "active"
@@ -38,14 +38,16 @@ contactLink.addEventListener('click', (e) => {
 })
 
 project1Link.addEventListener('click', (e) => {
-    setActive(project1Link, project2Link, project3Link)
+    setActive(project1Link, project2Link)
+    // setActive(project1Link, project2Link, project3Link)
 })
 
 project2Link.addEventListener('click', (e) => {
-    setActive(project2Link, project1Link, project3Link)
+    setActive(project2Link, project1Link)
+    // setActive(project2Link, project1Link, project3Link)
 })
 
-project3Link.addEventListener('click', (e) => {
-    setActive(project3Link, project1Link, project2Link)
-})
+// project3Link.addEventListener('click', (e) => {
+//     setActive(project3Link, project1Link, project2Link)
+// })
 

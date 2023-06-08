@@ -1,5 +1,5 @@
 *.firebaserc
-*.png
+
 # dependencies
 /node_modules
 /.pnp
