@@ -4,107 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ore Benson</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main-container">
-        <div id="main-nav">
-            <ul>
-                <li><a href="#home" id="homeLink" class="active">home</a></li>
-                <li><a href="#projects" id="projectsLink" class="inactive">projects</a></li>
-            </ul>
-        </div>
-        <div id="main-list-wrapper">
-            <div class="main" id="home">
-                <h1>Ore Benson</h1>
-                <div class="page-container" id="home-container">
-                    <div class="page-nav" id="home-nav">
+        <div id="page-container">
+            <div class="nav">
+                
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#about" id="homeLink" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#skills" id="skillsLink" class="inactive">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#contact" id="contactLink" class="inactive">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#projects" id="projectsLink" class="inactive">Projects</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="list-wrapper">
+                <div class="list-wrapper-element" id="about">
+                    <h1>Ore Benson</h1>
+                    <h3>Computer Science BSc</h3>
+                    <h3>Aspiring Software Engineer</h3>
+                </div>
+                <div class="list-wrapper-element" id="skills">
+                    <h2>Skills</h2>
+                    <p>
                         <ul>
-                            <li><p><a href="#about" id="aboutLink" class="active">about</a></p></li>
-                            <li><p><a href="#skills" id="skillsLink" class="inactive">skills</a></p></li>
-                            <li><p><a href="#contact" id="contactLink" class="inactive">contact</a></p></li>
+                            <li> Python, Django, Scipy</li>
+                            <li> Java, JavaFX</li>
+                            <li> JavaScript, NodeJS, ExpressJS, ReactJS</li>
+                            <li> HTML/CSS, PHP</li>
+                            <li> MySQL, SQLite, MongoDB</li>
                         </ul>
+                    </p>
+                </div>
+
+                <div class="list-wrapper-element" id="contact">
+                    <h2>Contact</h2>
+                    <p>
+                        <ul>
+                            <li><a href="mailto:contact@orebenson.com">contact@orebenson.com</a></li>
+                            <li><a href="https://www.github.com/orebenson" target="_blank">github.com/orebenson</a></li>
+                            <li><a href="https://www.linkedin.com/in/orebenson" target="_blank">linkedin.com/in/orebenson</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="list-wrapper-element" id="projects">
+                    <h2 id="projectsh1">Projects</h2>
+                    <div id="project1">
+                        <h3>Keystroke Authentication</h3>
+                        <p>Website developed for research into the use of keystroke biometrics for user authentication 
+                            with ver 30,000 keystrokes collected and analysed using various machine learning algorithms</p>
+                        <p>Code and documentation for this project can be found <a href="https://github.com/orebenson/keystroke_authentication">here</a></p>
+                        <p>Technologies: HTML/CSS, JavaScript, Python, SQL, AWS</p>
                     </div>
-                    <div class="list-wrapper" id="home-list-wrapper">
-                        <div class="list-wrapper-element" id="about">
-                            <h2>About</h2>
-                            <p>Hi, I'm Ore. Welcome to my portfolio.</p>
-                            <p>I am currently an undergraduate, in the final year of my Computer Science BSc, and will be starting an MSc in Software Engineering in September 2023. 
-                                
-                                When I'm not at my computer, I enjoy playing drums and bass guitar, and keeping fit through Thai kickboxing.</p>
-                            <br>
-                            <h2 id="skills">Skills</h2>
-                            <ul>
-                                <li><p> Python, Django, Scipy</p></li>
-                                <li><p> Java, JavaFX</p></li>
-                                <li><p> JavaScript, NodeJS, ExpressJS, ReactJS</p></li>
-                                <li><p> HTML/CSS, PHP</p></li>
-                                <li><p> MySQL, SQLite, MongoDB</p></li>
-                            </ul>
-                        <!-- </div>
-                        <div class="list-wrapper-element" id="skills"> -->
-                            
-                        </div>
-                        <div class="list-wrapper-element" id="contact">
-                            <h2>Contact</h2>
-                            <ul>
-                                <li><p><a href="mailto:contact@orebenson.com">contact@orebenson.com</a></p></li>
-                                <li><p><a href="https://www.github.com/orebenson" target="_blank">github.com/orebenson</a></p></li>
-                                <li><p><a href="https://www.linkedin.com/in/orebenson" target="_blank">linkedin.com/in/orebenson</a></p></li>
-                            </ul>
-                        </div>
+                    <br>
+                    <div id="project2">
+                        <h3>Online Banking Simulator</h3>
+                        <p>
+                            Application simulating bank transfers between users, including a currency conversion API. 
+                            Allowing users to send and receive payments and payments requests, view their balance, and choose between currencies.
+                            The application contains a currency conversion API route, enabling seamless transfers between accounts of different currencies.
+                        </p>
+                        <p>Code for this project can be found <a href="https://github.com/orebenson/payment_application">here</a></p>
+                        <p>Technologies: HTML/CSS, Django framework</p>
+                    </div>
+                    <br>
+                    <div id="project3">
+                        <h3>Print Shop Simulator</h3>
+                        <p>
+                            Simulates a printer shop, containing printers of various configurations such as print speed, paper type, and ink.
+                            Users can send jobs to each printer, which is stored in the printer queue and executed according to the print speed.
+                        </p>
+                        <p>Code for this project can be found <a href="https://github.com/orebenson/print_management">here</a></p>
+                        <p>Technologies: Java, JavaFX</p>
                     </div>
                 </div>
+
+                
+                    
             </div>
-            
-            <div class="main" id="projects">
-                <h1>Projects</h1>
-                <div class="page-container" id="projects-container">
-                    <div class="page-nav" id="projects-nav">
-                        <ul>
-                            <li><p><a href="#project1" id="project1Link" class="active">Project 1</a></p></li>
-                            <li><p><a href="#project2" id="project2Link" class="inactive">Project 2</a></p></li>
-                            <!-- <li><p><a href="#project3" id="project3Link" class="inactive">Project 3</a></p></li> -->
-                        </ul>
-                    </div>
-                    <div class="list-wrapper" id="project-list-wrapper">
-                        <div class="list-wrapper-element" id="project1">
-                            <h2>Keystroke Authentication</h2>
-                            <p>HTML/CSS, JavaScript, Python, SQL, AWS</p>
-                            <p>Website developed for research into the use of keystroke biometrics for user authentication with ver 30,000 keystrokes collected and analysed. 
-                                Below is a heatmap summary of a selection of user results,
-                                and a prediction table showing the reusls from the multi-layer perceptron algorithm, one of the various machine learning algorithms used.</p>
-                            <p>Code and documentation for this project can be found <a href="https://github.com/orebenson/keystroke_authentication">here</a></p>
-                            <br>
-                            <!-- <img src="experiment.PNG" alt="Experiment Snippet" width="40%"> -->
-                            <img src="example_grid.png" alt="mlp results">
-                            <img src="example_heatmap.png" alt="heatmap">
-                        </div>
-                        <div class="list-wrapper-element" id="project2">
-                            <h2>Payment Application</h2>
-                            <p>HTML/CSS, Django framework</p>
-                            <p>Application simulating bank transfers between users, including a currency conversion API. 
-                                Allowing users to send and receive payments and payments requests, view their balance, and choose between currencies.
-                                The application contains a currency conversion API route, enabling seamless transfers between accounts of different currencies.
-                                The user requests page and an example of the API are shown below</p>
-                            <p>Code for this project can be found <a href="https://github.com/orebenson/payment_application">here</a></p>
-                            <br>
-                            <img src="requests.png" alt="requests" width="50%">
-                            <img src="example_api.png" alt="api example">
-                            <br>
-                        <!-- </div>
-                        <div class="list-wrapper-element" id="project3">
-                            <h2>[ Project 3 ]</h2>
-                            <p>[ demo gif ]</p>
-                            <p>[ description ]</p>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-    
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>

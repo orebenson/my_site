@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 * {
     /* outline: 1px solid red; */
@@ -6,7 +8,8 @@
 }
 
 :root {
-    --background-color: hsl(260, 10%, 30%);
+    /* --background-color: hsl(260, 10%, 30%); */
+    --background-color: hsl(255, 4%, 18%);
     --text-color: hsl(260, 10%, 90%);
     --highlight-color: hsl(260, 10%, 65%);
     --accent-color: hsl(27, 75%, 73%);
@@ -15,38 +18,47 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Jost', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
     font-size: 20px;
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul{
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    font-weight: 400;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
+    padding-top: 2rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    padding-top: 2.75rem;
+}
+
+h3 {
+    padding-top: 0.5rem;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding-top: 0.3rem;
+    font-weight: 300;
 }
+
 
 ul li a {
     text-decoration: none;
-    color: var(--highlight-color);
 }
 
 ul li a.active {
@@ -59,115 +71,56 @@ ul li a.inactive {
 
 #main-container {
     height: 100vh;
-    max-width: 1000px;
+    width: 100%;
     margin:auto;
-    padding: 0;
+    padding: 2rem;
+    /* border: 1.5rem solid white; */
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-#main-nav {
+#page-container {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    min-width: none;
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
     display: flex;
-    height: fit-content;
-    justify-content: center;
+    flex-direction: row;
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+    width: fit-content;
     position: sticky;
     position: -webkit-sticky;
 }
 
-#main-nav ul {
-    margin: 0;
-    padding-inline: 0;
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: center;
-}
-
-#main-nav ul li {
-    padding: 1rem;
-}
-
-#main-list-wrapper {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-}
-
-#contact ul li a {
-    color: var(--text-color);
-}
-
-#contact ul li a:hover {
-    color: var(--highlight-color);
-}
-
-.main {
-    width: 100%;
-    height: 100%;
-    flex: 0 0 auto;
-    margin: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.main ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    list-style-type: none;
-    justify-content: left;
-}
-
-.main ul li {
-    padding: 0;
-    padding-bottom: 1rem;
-}
-
-.page-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.page-nav {
-    display: flex;
-    height: 100%;
-    width: 5rem;
-}
-
-.page-nav ul {
+.nav ul {
     margin: 0;
     padding: 0;
     display: flex;
     width: 100%;
     flex-direction: column;
     list-style-type: none;
-    justify-content: left;
+    padding-top: 3rem;
 }
 
-.page-nav ul li {
+.nav ul li {
     padding: 0;
     padding-bottom: 1rem;
-    /* position: sticky; */
 }
 
 .list-wrapper {
     width: 100%;
     height: 100%;
+    min-height: fit-content;
     padding: 0;
     margin: 0;
+    padding-left: 1.2rem;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
@@ -180,20 +133,20 @@ ul li a.inactive {
 }
 
 .list-wrapper-element {
+    display: block;
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    flex: 0 0 auto;
+    min-height: max(100vh);   
     margin: 0;
     padding: 0;
-    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.list-wrapper-element ul {
+.list-wrapper-element p ul {
     width: 100%;
 }
 
-.list-wrapper-element ul li {
+.list-wrapper-element p ul li {
     padding: 0;
     padding-bottom: 0.5rem;
 }
