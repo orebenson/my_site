@@ -16,13 +16,10 @@
                 <p>
                     <ul>
                         <li>
-                            <a href="#about" id="homeLink" class="active">Home</a>
+                            <a href="#home" id="homeLink" class="active">Home</a>
                         </li>
                         <li>
-                            <a href="#skills" id="skillsLink" class="inactive">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#contact" id="contactLink" class="inactive">Contact</a>
+                            <a href="#about" id="aboutLink" class="inactive">About</a>
                         </li>
                         <li>
                             <a href="#projects" id="projectsLink" class="inactive">Projects</a>
@@ -31,53 +28,67 @@
                 </p>
             </div>
             <div class="list-wrapper">
-                <div class="list-wrapper-element" id="about">
+                <div class="list-wrapper-element" id="home">
                     <h1>Ore Benson</h1>
                     <h3>Computer Science BSc</h3>
                     <h3>Aspiring Software Engineer</h3>
                 </div>
-                <div class="list-wrapper-element" id="skills">
-                    <h2>Skills</h2>
-                    <p>
-                        <ul>
-                            <li> Python, Django, Scipy</li>
-                            <li> Java, JavaFX</li>
-                            <li> JavaScript, NodeJS, ExpressJS, ReactJS</li>
-                            <li> HTML/CSS, PHP</li>
-                            <li> MySQL, SQLite, MongoDB</li>
-                        </ul>
-                    </p>
-                </div>
-
-                <div class="list-wrapper-element" id="contact">
-                    <h2>Contact</h2>
-                    <p>
-                        <ul>
-                            <li><a href="mailto:contact@orebenson.com">contact@orebenson.com</a></li>
-                            <li><a href="https://www.github.com/orebenson" target="_blank">github.com/orebenson</a></li>
-                            <li><a href="https://www.linkedin.com/in/orebenson" target="_blank">linkedin.com/in/orebenson</a></li>
-                        </ul>
-                    </p>
+                <div class="list-wrapper-element" id="about">
+                    <div id="skills">
+                        <h2>Skills</h2>
+                        <p>
+                            <ul>
+                                <li> Python, Django, Scipy</li>
+                                <li> Java, JavaFX</li>
+                                <li> JavaScript, NodeJS, ExpressJS, ReactJS</li>
+                                <li> HTML/CSS, PHP</li>
+                                <li> MySQL, SQLite, MongoDB</li>
+                            </ul>
+                        </p>
+                    </div>
+    
+                    <div id="contact">
+                        <h2>Contact</h2>
+                        <p>
+                            <ul>
+                                <li><a href="mailto:contact@orebenson.com">contact@orebenson.com</a></li>
+                                <li><a href="https://www.github.com/orebenson" target="_blank">github.com/orebenson</a></li>
+                                <li><a href="https://www.linkedin.com/in/orebenson" target="_blank">linkedin.com/in/orebenson</a></li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
                 <div class="list-wrapper-element" id="projects">
                     <h2 id="projectsh1">Projects</h2>
                     <div id="project1">
                         <h3>Keystroke Authentication</h3>
                         <p>Website developed for research into the use of keystroke biometrics for user authentication 
-                            with ver 30,000 keystrokes collected and analysed using various machine learning algorithms</p>
-                        <p>Code and documentation for this project can be found <a href="https://github.com/orebenson/keystroke_authentication">here</a></p>
+                            with over 30,000 keystrokes collected and classified using various machine learning algorithms,
+                            with accuracies over 85%.
+                        </p>
+                        <p>Code and documentation for this project can be found <a href="https://github.com/orebenson/keystroke_authentication" target="_blank">here</a></p>
                         <p>Technologies: HTML/CSS, JavaScript, Python, SQL, AWS</p>
                     </div>
                     <br>
                     <div id="project2">
-                        <h3>Online Banking Simulator</h3>
+                        <h3>Online Banking App</h3>
                         <p>
-                            Application simulating bank transfers between users, including a currency conversion API. 
-                            Allowing users to send and receive payments and payments requests, view their balance, and choose between currencies.
-                            The application contains a currency conversion API route, enabling seamless transfers between accounts of different currencies.
+                            Application simulating bank transfers between users, including a currency conversion API and various security measures. 
+                            Enables users to send and receive payments and payments requests, view their balance, and choose between currencies.
+                            Contains a currency conversion API route, enabling seamless transfers between accounts of different currencies.
                         </p>
-                        <p>Code for this project can be found <a href="https://github.com/orebenson/payment_application">here</a></p>
+                        <p>Code for this project can be found <a href="https://github.com/orebenson/payment_application" target="_blank">here</a></p>
                         <p>Technologies: HTML/CSS, Django framework</p>
+                    </div>
+                    <br>
+                    <div id="project4">
+                        <h3>8-bit Dungeon Crawler</h3>
+                        <p>
+                            Dungeon crawler game developed on the Rasperry Pi3 for the Pi Sense Hat, in accordance with client specifications.
+                            Consists of multiple levels, with unique mazes and keys to progress.
+                        </p>
+                        <p>Documentation for this project can be found <a href="https://github.com/orebenson/pi_crawler" target="_blank">here</a></p>
+                        <p>Technologies: Python</p>
                     </div>
                     <br>
                     <div id="project3">
@@ -86,12 +97,12 @@
                             Simulates a printer shop, containing printers of various configurations such as print speed, paper type, and ink.
                             Users can send jobs to each printer, which is stored in the printer queue and executed according to the print speed.
                         </p>
-                        <p>Code for this project can be found <a href="https://github.com/orebenson/print_management">here</a></p>
+                        <p>Code for this project can be found <a href="https://github.com/orebenson/print_management" target="_blank">here</a></p>
                         <p>Technologies: Java, JavaFX</p>
                     </div>
+                    <br>
+                    <br>
                 </div>
-
-                
                     
             </div>
         </div>

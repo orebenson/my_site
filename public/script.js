@@ -1,6 +1,5 @@
 const homePage = document.getElementById("homeLink")
-const skillsLink = document.getElementById("skillsLink")
-const contactLink = document.getElementById("contactLink")
+const aboutLink = document.getElementById("aboutLink")
 const projectsLink = document.getElementById("projectsLink")
 
 
@@ -12,16 +11,13 @@ function setActive (active_div, other_divs) {
 }
 
 homePage.addEventListener('click', (e) => {
-    setActive(homePage, [skillsLink, contactLink, projectsLink])
+    setActive(homePage, [aboutLink, projectsLink])
 })
-skillsLink.addEventListener('click', (e) => {
-    setActive(skillsLink, [homePage, contactLink, projectsLink])
-})
-contactLink.addEventListener('click', (e) => {
-    setActive(contactLink, [skillsLink, homePage, projectsLink])
+aboutLink.addEventListener('click', (e) => {
+    setActive(aboutLink, [homePage, projectsLink])
 })
 projectsLink.addEventListener('click', (e) => {
-    setActive(projectsLink, [skillsLink, contactLink, homePage])
+    setActive(projectsLink, [aboutLink, homePage])
 })
 
 
